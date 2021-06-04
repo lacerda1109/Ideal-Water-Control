@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Água Ideal App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="center">
+                <h1><a href="index.html">Água Ideal App</a></h1>
+                <a id="link-sobre" href="sobre.html">Sobre</a>
+                <div class="clear"></div>
+            </div>            
+        </header>
+        <!-- Preenchimentos -->
+        <section class="parte1">
+            <div class="cabeca">
+                <h2>Tenha controle do seu consumo ideal de água por dia.</h2>
+                <p>Preencha os campos para carregar o app:</p>
+            </div>            
+            <div class="center">
+                <div id="preenchimento">
+                    <p>Seu peso:</p>
+                    <input type="number" id="campo-peso" min="2" max="3">
+                    <p>Tamanho da sua garrafa (ml):</p>
+                    <input type="number" id="campo-recip-ml">
+                    <input type="button" value="Começar" id="btn-comecar">
+                </div>
+            </div>            
+        </section>
+        <!-- Info -->
+        <div class="center">
+            <div class="parte2">
+                <input type="button" value="Recomeçar" id="btn-recomecar">
+                <div class="info-recip">                
+                    <p id="text-info-recip"></p>
+                    <p>* Marque as caixas conforme bebe sua garrafa.</p>
+                </div>
+
+                <!-- Checkboxes -->
+                <div id="checkbox"></div>
+
+                <!-- Progress Bar -->
+                <div class="prog-container">
+                    <div class="prog-bar"><span id="porcent-number">0%</span></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script-index.js"></script>
+    </body>
+</html>
